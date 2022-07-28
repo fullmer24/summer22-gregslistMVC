@@ -1,15 +1,15 @@
 import { generateId } from '../Utils/generateId.js'
 
 
-export class Car{
-  constructor({make, model, year, price, img, description}){
+export class Car {
+  constructor({ make, model, year, price, img, description }) {
     this.id = generateId()
     this.make = make,
-    this.model = model,
-    this.year = year, 
-    this.price = price,
-    this.img = img,
-    this.description = description
+      this.model = model,
+      this.year = year,
+      this.price = price,
+      this.img = img,
+      this.description = description
   }
 
   // constructor(data){
@@ -21,7 +21,7 @@ export class Car{
   //   this.description = data.description
   // }
 
-  get Template(){
+  get Template() {
     return `
     <div class="col-4 p-3">
       <div class="bg-white elevation-2">
@@ -36,4 +36,5 @@ export class Car{
     </div>
     `
   }
+
 }
